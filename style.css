@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.zero {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.one {
+    /* background-color: black; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.one1 {
+    /* background-color: yellow; */
+}
+
+.one1 img {
+    margin-left: 25px;
+}
+
+.one2 {
+    /* background-color: red; */
+}
+
+.one2 img {
+    height: 35px;
+    margin-left: 30px;
+}
+
+.one3 {
+    /* background-color: green; */
+}
+
+.one3 input {
+    height: 35px;
+    margin-left: 80px;
+    margin-right: 100px;
+    width: 450px;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+    font-size: 15px;
+    color: gray;
+}
+
+.one4 {
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+}
+
+.one4 button {
+    margin-left: 28px;
+    height: 30px;
+    width: auto;
+    border: none;
+    background-color: #fff;
+}
+
+.one4 button a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.two {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(250, 245, 245);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two0 {
+    height: 50px;
+    width: 100%;
+    max-width: 1500px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    /* margin-right: 50px; */
+    gap: 25px;
+}
+
+.two0 ul a {
+    /* background-color: #fff; */
+    text-decoration: none;
+    color: rgb(3, 3, 93);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.two1 {
+    height: 50px;
+    /* background-color: green; */
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 5px;
+}
+
+.two1 img {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 45px;
+    min-width: 30px;
+    min-height: 10px;
+    height: 45px;
+    border-radius: 5px;
+    min-height: 10px;
+}
+
+.three {
+    height: 220px;
+    width: 100%;
+    background-color: rgb(251, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.threeone {
+    height: 180px;
+    width: 230px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.threeone img {
+    height: 110px;
+    border-radius: 5px;
+}
+
+.four img {
+    width: 100%;
+    height: auto;
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #000;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 35s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.five img {
+    width: 100%;
+    height: auto;
+}
+
+.six {
+    height: 250px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    /* margin-right: 50px; */
+}
+
+.six0 {
+    width: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    gap: 15px;
+}
+
+.six1 {
+    width: 70%;
+    /* background-color: brown; */
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.six1 .card {
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.six1 .card img {
+    height: 80px;
+}
+
+.six1 .card button {
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1bc5d1;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.six1 .card button:hover {
+    background-color: #1ab2bd;
+}
+.seven{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:serif;
+    font-weight: 100;
+}
+.seven0{
+    height: 0.5px;
+    width: 30%;
+    background-color: #7b7575;
+
+}
+.seven1{
+    /* background-color: green; */
+    text-align: center;
+}
+.seven2{
+    height: 0.5px;
+    width: 30%;
+    background-color: #7b7575;
+}
+.sevenJoin img{
+    width: 100%;
+    height: auto;
+}
+
+.sevenJoin1{
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bigBox{
+    height: 800px;
+    width: 80%;
+    /* background-color: yellow; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.bigBox1{
+    height: auto;
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.bigBox1 img{
+    width: 100%;
+}
+.bigBox2{
+    height: 800px;
+    width: 50%;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.bigBox2 img{
+    margin-left: 10px;
+    width: 100%;
+}
+
+.sevenJoin2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.divide1{
+    height: auto;
+    width: 50%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.divide1 img{
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+.divide2{
+    height: auto;
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.divide2 img{
+    width: 80%;
+    margin-bottom: 10px;
+}
