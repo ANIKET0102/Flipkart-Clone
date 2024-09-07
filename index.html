@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .zero {
+            height: 50px;
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .one {
+            /* background-color: black; */
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .one1 {
+            /* background-color: yellow; */
+        }
+
+        .one1 img {
+            margin-left: 25px;
+        }
+
+        .one2 {
+            /* background-color: red; */
+        }
+
+        .one2 img {
+            height: 35px;
+            margin-left: 30px;
+        }
+
+        .one3 {
+            /* background-color: green; */
+        }
+
+        .one3 input {
+            height: 35px;
+            margin-left: 80px;
+            margin-right: 100px;
+            width: 450px;
+            border-radius: 5px;
+            border: 1px solid darkblue;
+            font-size: 15px;
+            color: gray;
+        }
+
+        .one4 {
+            /* background-color: brown; */
+            display: flex;
+            align-items: center;
+        }
+
+        .one4 button {
+            margin-left: 28px;
+            height: 30px;
+            width: auto;
+            border: none;
+            background-color: #fff;
+        }
+
+        .one4 button a {
+            color: darkblue;
+            text-decoration: none;
+        }
+
+        .two {
+            height: 60px;
+            width: 100%;
+            background-color: rgb(250, 245, 245);
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .two0 {
+            height: 50px;
+            width: 100%;
+            max-width: 1500px;
+            /* background-color: yellow; */
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            /* margin-right: 50px; */
+            gap: 25px;
+        }
+
+        .two0 ul a {
+            /* background-color: #fff; */
+            text-decoration: none;
+            color: rgb(3, 3, 93);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .two1 {
+            height: 50px;
+            /* background-color: green; */
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 20px;
+            gap: 5px;
+        }
+
+        .two1 img {
+            height: auto;
+            width: auto;
+            max-width: 100px;
+            max-height: 45px;
+            min-width: 30px;
+            min-height: 10px;
+            height: 45px;
+            border-radius: 5px;
+            min-height: 10px;
+        }
+
+        .three {
+            height: 220px;
+            width: 100%;
+            background-color: rgb(251, 238, 238);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .threeone {
+            height: 180px;
+            width: 230px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            font-size: 15px;
+        }
+
+        .threeone img {
+            height: 110px;
+            border-radius: 5px;
+        }
+
+        .four img {
+            width: 100%;
+            height: auto;
+        }
+
+        .slider {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #000;
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+            animation: slide 35s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+
+            33% {
+                transform: translateX(-100%);
+            }
+
+            66% {
+                transform: translateX(-200%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .five img {
+            width: 100%;
+            height: auto;
+        }
+
+        .six {
+            height: 250px;
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            /* margin-right: 50px; */
+        }
+
+        .six0 {
+            width: 20%;
+            /* background-color: yellow; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            gap: 15px;
+        }
+
+        .six1 {
+            width: 70%;
+            /* background-color: brown; */
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+        }
+
+        .six1 .card {
+            height: 250px;
+            width: 250px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: lighter;
+        }
+
+        .six1 .card img {
+            height: 80px;
+        }
+
+        .six1 .card button {
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            border: none;
+            background-color: #1bc5d1;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .six1 .card button:hover {
+            background-color: #1ab2bd;
+        }
+        .seven{
+            height: 250px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            /* background-color: red; */
+            align-items: center;
+            justify-content: space-evenly;
+            font-family:serif;
+            font-weight: 100;
+        }
+        .seven0{
+            height: 0.5px;
+            width: 30%;
+            background-color: #7b7575;
+
+        }
+        .seven1{
+            /* background-color: green; */
+            text-align: center;
+        }
+        .seven2{
+            height: 0.5px;
+            width: 30%;
+            background-color: #7b7575;
+        }
+        .sevenJoin img{
+            width: 100%;
+            height: auto;
+        }
+
+        .sevenJoin1{
+            height: auto;
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bigBox{
+            height: 800px;
+            width: 80%;
+            /* background-color: yellow; */
+            display: flex;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .bigBox1{
+            height: auto;
+            width: 50%;
+            /* background-color: green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .bigBox1 img{
+            width: 100%;
+        }
+        .bigBox2{
+            height: 800px;
+            width: 50%;
+            /* background-color: #fff; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .bigBox2 img{
+            margin-left: 10px;
+            width: 100%;
+        }
+
+        .sevenJoin2{
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .divide1{
+            height: auto;
+            width: 50%;
+            /* background-color: green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .divide1 img{
+            width: 80%;
+            margin-left: 20%;
+            margin-bottom: 10px;
+        }
+        .divide2{
+            height: auto;
+            width: 50%;
+            /* background-color: yellow; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .divide2 img{
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="zero">
+
+    </div>
+
+    <div class="one">
+        <div class="one1">
+            <img src="./main_logo.svg" alt="">
+        </div>
+        <div class="one2">
+            <img src="./new-toll-number.webp" alt="">
+        </div>
+        <div class="one3">
+            <input type="text" placeholder=" What are you looking for? ">
+        </div>
+        <div class="one4">
+            <button><a href="">Track Order</a></button>
+            <button><a href="">Sign In & Sign Up</a></button>
+            <button><a href="">Wishlist</a></button>
+            <button><a href="">Cart</a></button>
+        </div>
+
+    </div>
+
+    <div class="two">
+        <div class="two0">
+            <ul><a href="">EYEGLASSES</a></ul>
+            <ul><a href="">SCREEN GLASSES</a></ul>
+            <ul><a href="">KIDS GLASSES</a></ul>
+            <ul><a href="">CONTACT LENS</a></ul>
+            <ul><a href="">SUNGLASSES</a></ul>
+            <ul><a href="">HOME EYE-TEST</a></ul>
+            <ul><a href="">STORE LOCATOR</a></ul>
+        </div>
+        <div class="two1">
+            <a href=""><img src="./Section2/3dtryon1.webp" alt=""></a>
+            <a href=""><img src="./Section2/blulogo.webp" alt=""></a>
+            <a href=""><img src="./Section2/gold_max_logo_dc.webp" alt=""></a>
+
+        </div>
+
+    </div>
+
+    <div class="three">
+        <div class="threeone"><a href=""><img src="./three/a2.webp" alt=""></a>
+            <h3>Eyeglasses</h3>
+        </div>
+        <div class="threeone"><a href=""><img src="./three/b2.webp" alt=""></a>
+            <h3>Sunglasses</h3>
+        </div>
+        <div class="threeone"><a href=""><img src="./three/d2.webp" alt=""></a>
+            <h3>Screen glasses</h3>
+        </div>
+        <div class="threeone"><a href=""><img src="./three/d.webp" alt=""></a>
+            <h3>Contact Lenses</h3>
+        </div>
+        <div class="threeone"><a href=""><img src="./three/e2.webp" alt=""></a>
+            <h3>Power Sunglasses</h3>
+        </div>
+        <div class="threeone"><a href=""><img src="./three/prog11.webp" alt=""></a>
+            <h3>Progressive Lenses</h3>
+        </div>
+
+    </div>
+
+    <div class="four">
+        <a href=""><img src="./Web Banner 1920x520.jpg" alt=""></a>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="./slider/1.webp" alt="Image 1">
+            <img src="./slider/2.webp" alt="Image 2">
+            <img src="./slider/3.webp" alt="Image 3">
+        </div>
+    </div>
+
+    <div class="five">
+        <a href=""><img src="./Bannerforexport.webp" alt=""></a>
+    </div>
+
+    <div class="six">
+        <div class="six0">
+            <h1
+                style="font-weight: 100; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #2f2e2e;">
+                WEAR THE</h1>
+            <h1>TREND</h1>
+            <p>Our hottest collections</p>
+        </div>
+
+        <div class="six1">
+            <div class="card">
+                <img src="./six/image179.webp" alt="">
+                <h1>Round</h1>
+                <a href=""><button>Explore</button></a>
+            </div>
+            <div class="card">
+                <img src="./six/cateeye.webp" alt="">
+                <h1>Cat-Eye</h1>
+                <a href=""><button>Explore</button></a>
+            </div>
+            <div class="card">
+                <img src="./six/clubmaster.webp" alt="">
+                <h1>clubmaster</h1>
+                <a href=""><button>Explore</button></a>
+            </div>
+            <div class="card">
+                <img src="./six/trans.webp" alt="">
+                <h1>Transparent</h1>
+                <a href=""><button>Explore</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>FREE PROGRESSIVE LENSES</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/New Web Banner.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>BOOK EYE TEST AT HOME</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/Turban-DesktopBanner.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>PREMIUM EYEWEAR</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/As seen on Desk.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>AS SEEN ON MOUNI ROY</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/web.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>AS SEEN ON SHARK TANK</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/Homepage-Banner-web.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>AS SEEN ON KARAN JOHAR</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/Web_banner.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>TRENDING SUNGLASSES</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/Sun-Banner-web.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>AQUACOLOR - GLAM UP WITH COLOR LENSES</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/Refresh-Banner-Web.webp" alt=""></a>
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>FIND THE PERFECT FIT</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin1">
+        <div class="bigBox">
+            <div class="bigBox1">
+                <a href=""><img src="./sevenJoin/eye-square10.webp" alt=""></a>
+                <a href=""><img src="./sevenJoin/power-sun-square.webp" alt="" ></a>
+            </div>
+            <div class="bigBox2">
+                <a href=""><img src="./sevenJoin/ce-square.webp" alt=""></a>
+                <a href=""><img src="./sevenJoin/sun-square.webp" alt=""></a>
+                <a href=""><img src="./sevenJoin/Banner03_TileDesktop.webp" alt=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>CONTACT LENSES & MORE</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin2">
+        <div class="divide1">
+            <a href=""><img src="./sevenJoin2/contact-lens-more.webp" alt=""></a>
+        </div>
+        <div class="divide2">
+            <a href=""><img src="./sevenJoin2/contact-lens-more-1.webp" alt=""></a>
+        </div>
+        
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>BUY IT YOUR WAY</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin2">
+        <div class="divide1">
+            <a href=""><img src="./sevenJoin2/call.webp" alt=""></a>
+            <a href=""><img src="./sevenJoin2/hto.webp" alt=""></a>
+        </div>
+        <div class="divide2">
+            <a href=""><img src="./sevenJoin2/wts-up.webp" alt=""></a>
+            <a href=""><img src="./sevenJoin2/stores.webp" alt=""></a>
+        </div>
+        
+    </div>
+
+    <div class="seven">
+        <div class="seven0"></div>
+        <div class="seven1"><h1>OUR BRANDS</h1></div>
+        <div class="seven2"></div>
+    </div>
+    <div class="sevenJoin">
+        <a href=""><img src="./seven/VC-Banner.webp" alt=""></a>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+<!-- 
+                <ul><a href="">EYEGLASSES</a></ul>
+                <ul><a href="">SCREEN GLASSES</a></ul>
+                <ul><a href="">KIDS GLASSES</a></ul>
+                <ul><a href="">CONTACT LENS</a></ul>
+                <ul><a href="">SUNGLASSES</a></ul>
+                <ul><a href="">HOME EYE-TEST</a></ul>
+                <ul><a href="">STORE LOCATOR</a></ul>
+-->
