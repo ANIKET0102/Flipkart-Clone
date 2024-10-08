@@ -54,6 +54,7 @@ body {
     margin-right: 100px;
     width: 450px auto;
     border-radius: 5px;
+    padding-right: 60px;
     border: 1px solid darkblue;
     font-size: 15px;
     color: gray;
@@ -71,6 +72,7 @@ body {
     width: auto;
     border: none;
     background-color: #fff;
+    font-size: 17px;
 }
 
 .one4 button a {
