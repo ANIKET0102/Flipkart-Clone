@@ -52,7 +52,7 @@ body {
     height: 35px;
     margin-left: 80px;
     margin-right: 100px;
-    width: 450px;
+    width: 450px auto;
     border-radius: 5px;
     border: 1px solid darkblue;
     font-size: 15px;
@@ -79,7 +79,7 @@ body {
 }
 
 .two {
-    height: 60px auro;
+    height: 60px auto;
     width: 100%;
     background-color: rgb(250, 245, 245);
     margin-top: 20px;
@@ -87,10 +87,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .two0 {
-    height: 50px;
+    height: 50px auto;
     width: 100%;
     max-width: 1500px;
     /* background-color: yellow; */
@@ -99,6 +100,7 @@ body {
     margin-left: 40px;
     /* margin-right: 50px; */
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .two0 ul a {
@@ -215,7 +217,7 @@ body {
 }
 
 .six {
-    height: 250px;
+    height: 250px auto;
     width: 100%;
     /* background-color: red; */
     display: flex;
@@ -242,6 +244,7 @@ body {
     display: flex;
     gap: 10px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .six1 .card {
