@@ -14,7 +14,6 @@ Project Structure
 
 ├── index.html        
 ├── assets
-
 │   ├── images         
 │   └── css
 │       └── styles.css 
