@@ -12,12 +12,12 @@ CSS3: For styling and layout.
 
 Project Structure
 
-├── index.html         # The main entry point of the website
+├── index.html        
 ├── assets
-│   ├── images         # Contains images used in the project
+│   ├── images         
 │   └── css
-│       └── styles.css # Custom CSS file for styling the webpage
-└── README.md          # Project documentation
+│       └── styles.css 
+└── README.md          
 
 
 How to Run the Project
